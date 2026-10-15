@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+
+/*ESTILIZAÇÃO DO HEADER DA PÁGINA*/
+header{
+    background-color:rgb(219, 208, 208);
+    padding : 0px 0 0px 0px; /* topo, direita, baixo e esquerda (POSICIONANDO O FUNDO)*/
+}
+
+
+/*AJEITANDO O LOGOTIPO*/
+.Logo {
+    width: 350px;
+    
+}
+
+/*ESTILIZAÇÃO DO MENU DO SITE*/
+nav {
+    /*cor e tamanho*/
+    color:rgb(71, 70, 70);
+    font-size:30;
+    right: 70px; /*posicionando os menus na direita*/
+    top: 100px; /*colocando a distância deles comparado com o topo*/
+    position: absolute; /* posicionando os menus separadamente do site*/
+    
+}
+
+a{
+    color:rgb(71, 70, 70);
+    text-decoration: none;
+}
+
+
+/*ESTILIZANDO OS MENUS DO SITE*/
+nav li{
+    display: inline; /*coloca um do lado do outro*/
+    margin-right: 20px; /*espaçamento entre os menus*/
+}
+
+/*CRIANDO UM BANNER*/
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png'); 
+    background-size: cover;
+    
+}
+
+
+
+
+
+
+
+.contatos_titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(7, 7, 6);
+    font-family: cursive;
+    list-style: none;
+}
+
+.contatos_item::before{
+    content: "📱";
+}
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+
+
+
+/*Formulário*/
+form{
+	margin-top: 20px;
+	margin-left: 20%;
+    margin-bottom: 0;
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+fieldset{
+	width: 75%;
+	padding-left: 5%;
+	margin-bottom: 2%;
+}
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 85%;
+}
+.chk{
+	margin: 20px 0;
+}
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+    margin-bottom: 20px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno{
+    display: none;
+    margin-bottom: 15px;
+}
+.divRetorno p{
+    font-size: 24px;
+}
+
+/*Footer*/
+footer{
+	background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(235, 147, 33, 0.6); /* Define a transparência */
+    background-blend-mode: darken; /* Mistura as cores */
+	padding: 0 10px 10px 0;
+}
+footer p{
+    font-weight: bold;
+    color: white;   
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+}
+footer i{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.logo_footer{
+	width: 15%;
+    padding-left: 85%;
+}
+

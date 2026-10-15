@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+    
+    
+}
+
+
+/*ESTILIZAÇÃO DO HEADER DA PÁGINA*/
+header{
+    background-color:rgb(219, 208, 208);
+    padding : 0px 0 0px 0px; /* topo, direita, baixo e esquerda (POSICIONANDO O FUNDO)*/
+}
+
+.Logo {
+    width: 350px;
+    
+}
+
+/*ESTILIZAÇÃO DO MENU DO SITE*/
+nav {
+    /*cor e tamanho*/
+    color:rgb(71, 70, 70);
+    font-size:30;
+    right: 70px; /*posicionando os menus na direita*/
+    top: 100px; /*colocando a distância deles comparado com o topo*/
+    position: absolute; /* posicionando os menus separadamente do site*/
+    
+}
+
+a{
+    color:rgb(71, 70, 70);
+    text-decoration: none;
+}
+
+
+/*ESTILIZANDO OS MENUS DO SITE*/
+nav li{
+    display: inline; /*coloca um do lado do outro*/
+    margin-right: 20px; /*espaçamento entre os menus*/
+}
+
+
+/*CRIANDO UM BANNER*/
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png'); 
+    background-size: cover;
+    
+}
+
+
+/* Estilizando o Footer*/
+.Logo_footer{
+    width: 15%;   
+    padding-left: 85%;
+        
+}
+
+footer p{
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-align:right;
+    width: 98%;
+    font-size: 20px;
+}
+
+footer{ 
+    background: url(../img/teste1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0,0,0,0.4);
+    background-blend-mode: darken ;
+    
+}
+footer i{
+    color: white;
+}
+
+.encomendas_titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(7, 7, 6);
+    font-family: cursive;
+    list-style: none;
+}
+
+.adicionar_encomendas {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(7, 7, 6);
+    font-family: cursive;
+    list-style: none;
+    margin-left: 2.1%;
+}
+
+.texto_encomendas {
+    padding-left: 5%;
+}
+
+/*Tabela de Encomedas*/
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+
+td, th {
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
+
+/*Destaque da Informação Inválida*/
+.info-invalida{
+    color: red;
+    background-color: white;
+}
+
+.info-invalida-unitario{
+    color: white;
+    background-color: red;
+}
+
+/*Personalizando o Formulário*/
+
+form label{
+    font-size: 20px;
+    margin-left: 2.1%;
+}
+
+.input-padrao{
+	margin: 0 0 40px;
+	padding: 10px 10px;
+	width: 15%;
+}
+
+fieldset{
+    border:none;
+    margin-top: 2%;
+}
+
+.Selects{
+    font-size: 20px;
+    height: 3%;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgb(116, 114, 114);
+    color:white;
+    width: 12%;
+    height: 5%;
+    margin-left: 2.1%;
+	cursor: pointer;
+}
+
+/*Efeito para a linha sumir quando excluida*/
+.fadeOut {
+    opacity: 0;
+    transition: 1s;
+}
+
+/*Campo de Busca*/
+#filtrar-tabela {
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Esconde a linha para a busca*/
+.invisivel {
+    display: none;
+}
+
+
+

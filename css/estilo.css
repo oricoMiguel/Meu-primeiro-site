@@ -1,0 +1,245 @@
+<<<<<<< HEAD
+/*ESTILIZAÇÃO DO BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+
+/*ESTILIZAÇÃO DO HEADER DA PÁGINA*/
+header{
+    background-color:rgb(219, 208, 208);
+    padding : 0px 0 0px 0px; /* topo, direita, baixo e esquerda (POSICIONANDO O FUNDO)*/
+}
+
+
+/*AJEITANDO O LOGOTIPO*/
+.Logo {
+    width: 350px;
+    
+}
+
+/*ESTILIZAÇÃO DO MENU DO SITE*/
+nav {
+    /*cor e tamanho*/
+    color:rgb(71, 70, 70);
+    font-size:30;
+    right: 70px; /*posicionando os menus na direita*/
+    top: 100px; /*colocando a distância deles comparado com o topo*/
+    position: absolute; /* posicionando os menus separadamente do site*/
+    
+}
+
+/*estilizar os itens do menu*/
+nav li{
+    display: inline; /*coloca um do lado do outro*/
+    margin-right: 20px; /*espaçamento entre os menus*/
+}
+
+/*ESTILIZAÇÃO DA DIV DO HEADER */
+.divheader {   /*significa que os menus podem ser deslocado do seu lugar original */
+    position: relative;
+}
+
+/*CRIANDO UM BANNER*/
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png'); 
+    background-size: cover;
+    
+}
+
+/*Estilizando o Sobre nós*/
+.sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+    margin-left:40%;
+
+}
+
+/*Estilizando a imagem do Sobre Nós*/
+.img_sobrenos{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+/*Centralizando o "Sobre Nós"*/
+.titulo_sobrenos{
+    text-align: center;
+    clear: left;
+=======
+/*ESTILIZAÇÃO DO BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+
+/*ESTILIZAÇÃO DO HEADER DA PÁGINA*/
+header{
+    background-color:rgb(219, 208, 208);
+    padding : 0px 0 0px 0px; /* topo, direita, baixo e esquerda (POSICIONANDO O FUNDO)*/
+}
+
+
+/*AJEITANDO O LOGOTIPO*/
+.Logo {
+    width: 350px;
+    
+}
+
+/*ESTILIZAÇÃO DO MENU DO SITE*/
+nav {
+    /*cor e tamanho*/
+    color:rgb(71, 70, 70);
+    font-size:30;
+    right: 70px; /*posicionando os menus na direita*/
+    top: 100px; /*colocando a distância deles comparado com o topo*/
+    position: absolute; /* posicionando os menus separadamente do site*/
+    
+}
+
+/*ESTILIZANDO OS MENUS DO SITE*/
+nav li{
+    display: inline; /*coloca um do lado do outro*/
+    margin-right: 20px; /*espaçamento entre os menus*/
+}
+
+/*ESTILIZAÇÃO DA DIV DO HEADER */
+.divheader {   /*significa que os menus podem ser deslocado do seu lugar original */
+    position: relative;
+}
+
+/*CRIANDO UM BANNER*/
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/BARBEARIA-ARACAJU-BARBEIRO-MESTRE.png'); 
+    background-size: cover;
+    
+}
+
+/*Estilizando o Sobre nós*/
+.sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+    margin-left:20%;
+
+}
+
+/*ESTILIZANDO A IMG DO SOBRE NÓS*/
+.img_sobrenos{
+    width: 31%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0 #000000;
+}
+
+/*CENTRALIZANDO O "SOBRE NÓS"*/
+.titulo_sobrenos{
+    text-align: center;
+    clear: left;
+}
+
+
+/*PARTE DO MAPA"*/
+.MapaGeral {
+    background: linear-gradient(#FFFFFF, #83644b);  
+    padding : 20px 0 20px 0px;
+}
+
+.MapaGeral p{
+    text-align: center;  
+    padding : 20px 0 0px 0px;
+}
+
+.Mapa {
+    margin-left:34%;   
+}
+
+
+/*PARTE PRODUTOS*/
+.img_produtos{
+    width: 18%;
+    margin: 40px 20% 0 0;
+    float: right; 
+    border-radius: 20px;                /*estilizando a imagem*/
+    box-shadow: 10px 10px 5px 0 #000000;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.img_produtos:hover {   /*mouse emcima da imagem*/ 
+    opacity: 0.7;
+}
+
+.titulo_produtos {
+    margin-left:25%;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.lista_produtos {
+    padding : 40px 0 0px 0px;
+    margin: 0;
+    text-align: justify;
+    margin-left:30%;
+    font-size: 25px;
+    clear: left;
+    /* display: inline-block
+    vertical-aligh:top;
+    line-height: ; */          /*coloca a imagem do lado*/
+}
+.nossos_produtos{
+    background: linear-gradient(#83644b, #5f4937);
+}
+
+
+/*Editando o Video*/
+.video {
+    padding : 100px 0 3% 32%;
+    
+}
+
+
+/*Estilizando o Rodapé */
+.logo_footer{
+    width: 15%
+    
+}
+footer p{
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-align:right;
+    width: 98%;
+    font-size: 20px;
+}
+
+footer{ 
+    background: url(../img/teste1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0,0,0,0.4);
+    background-blend-mode: darken ;
+}
+footer i{
+    color: white;
+}
+
+
+nav a {
+  color: inherit;         /* Herda a cor do elemento pai */
+  text-decoration: none;  /* Remove o sublinhado */
+}
+
+nav a:hover {
+  color: rgb(216, 133, 9);            /* Cor ao passar o mouse, por exemplo vermelho */
+>>>>>>> ef762de (Atualizando arquivos locais do projeto)
+}

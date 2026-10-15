@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Francis</title>
+        <link href="css/estilos_contatos.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div>
+              <img src="img/logotipo2-removebg-preview.png" title="Site do Francis" class="logo">
+              <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li><a>|</a></li> 
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                  </ul>  
+                </nav>
+            </div>
+        </header>
+        <main>
+            <ul class="contatos_titulo">
+                <li class="contatos_item">Contatos</li>
+              </ul>
+            <p>
+                Será uma alegria te atender!  <br><br>
+               Você pode nos contatar pelo Whats, Instragram ou pelo Formulário.
+            </p>
+            <form id="frmContato">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+            
+                    <label>Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+            
+                    <label>E-mail</label>
+                    <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+            
+                    <label>Telefone</label>
+                    <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+            
+                    <label>Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            
+                    <label>Como prefere o nosso contato?
+                        <input type="radio" value="radio-mail" name="Contato"> E-mail
+                        <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                        <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                    </label>
+                    <br>
+            
+                    <label>Qual o motivo do seu contato?
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+                    <br>
+                </fieldset>
+            
+                <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidades por e-mail?</label>
+            
+                <input type="submit" id="enviar" value="Enviar formulário" class="enviar">
+            </form>
+        </main>
+        <!--Rodapé-->
+  <footer>
+    <img src="img/logotipo2-removebg-preview.png" title="Site do Francis" class="Logo_footer">
+    <p><a href="https://wa.me/551142277450"><i class="fa fa-whatsapp"></i></a> (11)4227-7450 | <a
+        href="https://instagram.com/BarbeariaFrancis_"><i class="fa fa-instagram"></i></a> @BarbeariaFrancis_</p>
+  </footer>
+    </body>
+
+
+    <script>
+        document.getElementById('frmContato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio real do formulário
+    
+            alert('Formulário Enviado!');
+    
+            // Aguarda 1,5s e recarrega a página
+            setTimeout(function () {
+                location.reload();
+            }, 1500);
+        });
+    </script>
+
+</html>

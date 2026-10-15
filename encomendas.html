@@ -1,0 +1,122 @@
+ <html>
+    <head>
+        <link rel="icon" href="img/logotipo2-removebg-preview.png" type="image/x-icon"> <!--Ícone na aba do google-->
+        <link href="css/estilos_encomendas.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <title>Francis</title>
+    </head>
+    <body>        
+        <header>           
+            <div> 
+                <img src="img/logotipo2-removebg-preview.png" title="Site do Francis" class="Logo">
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li><a>|</a></li> 
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                  </ul>  
+                </nav>
+            </div>            
+        </header>
+    
+            <main>
+                <ul class="encomendas_titulo">
+                <li class="encomendas_item"> Encomendas</li>
+                </ul>
+                <section class="container">
+
+                    <!--Campo de Filtragem da tabela-->
+                    <label for="filtrar-tabela">Buscar:</label>
+                    <br>
+                    <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente que deseja buscar">
+
+                    <!--Tabela das Encomendas-->
+                    <table>
+                        <thead> <!--Cabeçalho da tabela-->
+                            <tr> <!--Linhas-->
+                                <th>Nome</th>
+                                <th>Produto</th>
+                                <th>Quantidade</th>
+                                <th>Valor Unitário</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-clientes"> <!--Corpo da tabela-->
+                            <tr class="cliente"> 
+                                <td class="nome">Guilherme</td>
+                                <td class="produto">Keune 1922</td>
+                                <td class="qtde">w</td>
+                                <td class="unitario">50</td>
+                                <td class="total"></td>                                
+                            </tr>
+                            <tr class="cliente">
+                                <td class="nome">João</td>
+                                <td class="produto">Creme de pentear</td>
+                                <td class="qtde">4</td>
+                                <td class="unitario">25</td>
+                                <td class="total"></td>                                
+                            </tr>
+                            <tr class="cliente">
+                                <td class="nome">Miguel</td>
+                                <td class="produto">Creme anticaspa</td>
+                                <td class="qtde">2</td>
+                                <td class="unitario">7y</td>
+                                <td class="total"></td>                                
+                            </tr>
+                            <tr class="cliente">
+                                <td td class="nome">Angelina</td>
+                                <td class="produto">Tinta de Cabelo (vermelho) </td>
+                                <td class="qtde">4</td>
+                                <td class="unitario">15</td>
+                                <td class="total"></td>                                
+                            </tr>
+                        </tbody>                        
+                    </table>
+                    <button id="api-encomenda" class="botao">Buscar Encomenda</button>
+                </section>
+            </main>
+
+            <li class="adicionar_encomendas">Adicionar Encomendas</li>
+            <form id="frmEncomenda">
+                <fieldset>                   
+                    <label>Nome:</label>
+                    <input type="text" id="nome" name="" placeholder="Digite Aqui"  class="input-padrao" required>
+
+                    <label>Qtde:</label>
+                    <input type="number" id="qtde" name="" placeholder="Digite Aqui" class="input-padrao" required>
+
+                    <label>Produto:</label>
+                    <select id="produto">
+                        <option>Selecione</option>
+                        <option>Keune 1922</option>
+                        <option>Head & Shoulders </option>
+                        <option>Olaplex</option>
+                    </select>
+                    </label>       
+
+                    <br>
+                    <label>R$ Unitário:</label>
+                    <input type="number" id="valor" name="" placeholder="Digite Aqui" class="input-padrao" required>
+                    <br>
+                    <button id="botao_form">Adicionar</button>
+
+                </fieldset>
+            </form>
+    
+            <footer>
+                <img src="img/logotipo2-removebg-preview.png" title="Site do Francis" class="Logo_footer">
+                <p><a href="https://wa.me/551142277450"><i class="fa fa-whatsapp"></i></a> (11)4227-7450 | <a
+                    href="https://instagram.com/BarbeariaFrancis_"><i class="fa fa-instagram"></i></a> @BarbeariaFrancis_</p>
+        </footer>
+        <script src ="js/encomendas.js"></script>
+        <script src ="js/adiciona_encomenda.js"></script>
+        <script src ="js/remover_encomenda.js"></script>
+        <script src ="js/busca_encomenda.js"></script>
+        <script src ="js/api_encomenda.js"></script>
+    </body>
+</html>
+
+
